@@ -1,6 +1,7 @@
 # Autopoesie Apparatus
 
 ## Update Juli 2022 / Berlin
+(Concept by Verena Lercher)
 
 We have now 6 players (A,B,C,D,E,F) and one PrinterPi (PlayerP) and the BrainPi (playerX) 
 
