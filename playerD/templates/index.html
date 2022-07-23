@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>AUTOPOESIE APPARATUS piD</title>
+</head>
+<body>
+  <table>
+  <tr>
+    <td colspan="2"><h1>AUTOPOESIE APPARATUS piD</h1></td>
+  </tr>
+  
+  <tr>
+    <td colspan="2"><h3 style="color: green;">{{ msg }}</h3></td>
+  </tr>
+  
+  <tr>
+    <td colspan="2">This is the Raspberry piD with the IP Address: 192.168.1.124</td>
+  </tr>
+  
+  <tr>
+    <td>FLASK PORT 5000</td>
+    <td>This means you need to connect with http://192.168.1.124:5000</td>
+  </tr>
+  
+  <tr>
+    <td>Play File</td>
+    <td>To play file 1.mp3 call this url: <br> 
+      http://192.168.1.124:5000/playfile/1</td>
+  </tr>
+  
+  <tr>
+    <td>Number of Mp3 Files:</td>
+    <td>{{ amount }}</td>
+  </tr>
+  
+  <tr>
+    <td>Audio Check</td>
+    <td><a href="/playfile/1">Play 1.MP3</a></td>
+  </tr>
+  
+  
+  <tr>
+    <td>Update Files from Server</td>
+    <td><a href="/update">Update</a></td>
+  </tr>  
+  
+  </table>
+  
+  <hr>
+  
+  <h3>Update</h3>
+  <div>
+    Mit der URL "http://192.168.1.124/update" ladet man die Datei
+    D.zip vom blist-apparat.at server. <br>
+    die Datei befindet sich auf <br>
+    http://ki.blist-apparat.at/D.zip<br>
+    Man kann auch eine andere Datei hochladen zb. Audio.zip oder whatever.zip
+  </div>
+  
+</body>
+</html>

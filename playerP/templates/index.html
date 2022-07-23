@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ url_for('static', filename='uikit.min.css') }}" />
+        <script src="{{ url_for('static', filename='uikit.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='uikit-icons.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='jquery.js') }}"></script>
+    </head>
+    <body>
+      <section class="uk-section">
+        <div class="uk-container">
+          <div class="uk-grid">
+            <div class="uk-width-1-1"><h2>AUTOPOESIE Printer v002</h2></div>
+            <div class="uk-width-1-1"><h3 style="color: green;">{{ msg }}</h3></div>
+            <div class="uk-width-1-1">This is the Raspberry piP with the IP Address: 192.168.1.131:4444</div>
+          </div>
+        </div>
+        
+        <div class="uk-container">
+          <ul class="uk-subnav uk-subnav-pill" uk-switcher>
+              <li><a href="#">Player Printer</a></li>
+              <li><a href="#">Player A</a></li>
+              <li><a href="#">Player B</a></li>
+              <li><a href="#">Player C</a></li>
+              <li><a href="#">Player D</a></li>
+              <li><a href="#">Player E</a></li>
+              <li><a href="#">Player F</a></li>
+          </ul>
+
+          <ul class="uk-switcher uk-margin">
+            <!-- Section Printer -->
+              <li>
+                <div class="uk-container">
+                  <div class="uk-grid">
+                    <div class="uk-width-1-1">
+                      <a class="clickit uk-button uk-button-default" href="/update">Update from Server P.zip</a><hr>
+                      Current Number of TXT Files: {{ amount }}
+                    </div>
+                  </div>
+                </div>
+              </li>
+              
+              <!-- Section PlayerA -->
+              <li>
+                <div class="uk-container">
+                  <div class="uk-grid">
+                    <div class="uk-width-1-1">
+                      <a class="clickit uk-button uk-button-default" data-url="http://192.168.1.121:5000/playfile/1">A: Play File 1.mp3</a><hr>
+                      
+                      <a class="clickit uk-button uk-button-default" data-url="http://192.168.1.121:5000/update">Update from Server A.zip for playerA</a><hr>
+                      
+                      <a class="clickit uk-button uk-button-default" data-url="http://192.168.1.121:5000/playertest">Test Player A</a><hr>
+                      
+                      <a class="clickit uk-button uk-button-default" data-url="http://192.168.1.121:5000/reboot">Reboot Player A</a><hr>
+                      
+                    </div>
+                  </div>
+                </div>
+              </li>
+              
+              <!-- Section PlayerB -->
+              <li>
+                <div class="uk-container">
+                  <div class="uk-grid">
+                    <div class="uk-width-1-1">
+                      <a class="clickit uk-button uk-button-default" data-url="http://192.168.1.125:5000/playfile/1">B: Play File 1.mp3</a><hr>
+                      
+                      <a class="clickit uk-button uk-button-default" data-url="http://192.168.1.125:5000/update">Update from Server AB.zip for playerB</a><hr>
+                      
+                      <a class="clickit uk-button uk-button-default" data-url="http://192.168.1.125:5000/playertest">Test Player B</a><hr>
+                      
+                      <a class="clickit uk-button uk-button-default" data-url="http://192.168.1.125:5000/reboot">Reboot Player B</a><hr>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              
+              <!-- Section PlayerC -->
+              <li>
+                <div class="uk-container">
+                  <div class="uk-grid">
+                    <div class="uk-width-1-1">
+                      <a class="clickit uk-button uk-button-default" data-url="http://192.168.1.123:5000/playfile/1">C: Play File 1.mp3</a><hr>
+
+                      <a class="clickit uk-button uk-button-default" data-url="http://192.168.1.123:5000/update">Update from Server C.zip for playerB</a><hr>
+
+                      <a class="clickit uk-button uk-button-default" data-url="http://192.168.1.123:5000/playertest">Test Player C</a><hr>
+
+                      <a class="clickit uk-button uk-button-default" data-url="http://192.168.1.123:5000/reboot">Reboot Player C</a><hr>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              
+              <!-- Section PlayerD -->
+              <li>
+                <div class="uk-container">
+                  <div class="uk-grid">
+                    <div class="uk-width-1-1">
+                      <a class="clickit uk-button uk-button-default" data-url="http://192.168.1.124:5000/playfile/1">D: Play File 1.mp3</a><hr>
+
+                      <a class="clickit uk-button uk-button-default" data-url="http://192.168.1.124:5000/update">Update from Server D.zip for playerD</a><hr>
+
+                      <a class="clickit uk-button uk-button-default" data-url="http://192.168.1.124:5000/playertest">Test Player D</a><hr>
+
+                      <a class="clickit uk-button uk-button-default" data-url="http://192.168.1.124:5000/reboot">Reboot Player D</a><hr>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              
+              <!-- Section PlayerE -->
+              <li>
+                <div class="uk-container">
+                  <div class="uk-grid">
+                    <div class="uk-width-1-1">
+                      <a class="clickit uk-button uk-button-default" data-url="http://192.168.1.126:5000/playfile/1">E: Play File 1.mp3</a><hr>
+
+                      <a class="clickit uk-button uk-button-default" data-url="http://192.168.1.126:5000/update">Update from Server E.zip for playerE</a><hr>
+
+                      <a class="clickit uk-button uk-button-default" data-url="http://192.168.1.126:5000/playertest">Test Player E</a><hr>
+
+                      <a class="clickit uk-button uk-button-default" data-url="http://192.168.1.126:5000/reboot">Reboot Player E</a><hr>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              
+              <!-- Section PlayerF -->
+              <li>
+                <div class="uk-container">
+                  <div class="uk-grid">
+                    <div class="uk-width-1-1">
+                      <a class="clickit uk-button uk-button-default" data-url="http://192.168.1.127:5000/playfile/1">F: Play File 1.mp3</a><hr>
+
+                      <a class="clickit uk-button uk-button-default" data-url="http://192.168.1.127:5000/update">Update from Server F.zip for playerF</a><hr>
+
+                      <a class="clickit uk-button uk-button-default" data-url="http://192.168.1.127:5000/playertest">Test Player F</a><hr>
+
+                      <a class="clickit uk-button uk-button-default" data-url="http://192.168.1.127:5000/reboot">Reboot Player F</a><hr>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              
+            
+              
+              
+                
+          </ul>  
+        </div>
+        
+      </section>
+      
+      <script>
+      
+      $(window).on('load', function() { 
+        console.log("Welcome to the machine - Where have you been?");
+        
+        $( ".clickit" ).on( "click", function(event) {
+          
+          event.preventDefault();
+          
+          var url = $(this).data("url");
+          
+          $.get( url, function( data ) {
+            console.log(data);
+          });
+          
+        });
+        
+      });
+      
+        
+        
+      </script>
+      
+      
+      
+    </body>
+</html>

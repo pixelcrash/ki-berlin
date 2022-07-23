@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>AUTOPOESIE APPARATUS piPrinter</title>
+</head>
+<body>
+  <table>
+  <tr>
+    <td colspan="2"><h1>AUTOPOESIE APPARATUS piPrinter</h1></td>
+  </tr>
+  
+  <tr>
+    <td colspan="2"><h3 style="color: green;">{{ msg }}</h3></td>
+  </tr>
+  
+  <tr>
+    <td colspan="2">This is the Raspberry piA with the IP Address: 192.168.1.131</td>
+  </tr>
+  
+  <tr>
+    <td>FLASK PORT 4444</td>
+    <td>This means you need to connect with http://thePiIp:4444</td>
+  </tr>
+  
+  <tr>
+    <td>Number of TXT Files:</td>
+    <td>{{ amount }}</td>
+  </tr>
+  
+  <tr>
+    <td>Print Check</td>
+    <td><a href="/print/1">Print 1.txt</a></td>
+  </tr>
+  
+  
+  <tr>
+    <td>Update Files via Mac Mini</td>
+    <td><a href="/update">Update</a></td>
+  </tr>
+  
+  <tr>
+    <td colspan="2">
+      <strong>HELP</strong><br>
+      <ul>
+        <li>You have to save the zip-Files on the mac mini in the folder
+        '~/Gerriet/'.</li>
+        <li>
+        The files need to be named A.zip, B.zip, C.zip, D.zip, and Text.zip
+        </li>
+        <li>
+        The files need to be in the main folder of the zip f.e. A.zip/1.mp3 not A.Zip/A/1.mp3. no subdirectories! 
+        </li>
+        <li>
+          Audio files need to be named 1.mp3, 2.mp3 .... not 01.mp3 or anyname.mp3
+        </li>
+      </ul>
+    </td>
+  </tr>
+  
+  
+  </table>
+</body>
+</html>
